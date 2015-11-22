@@ -1,0 +1,8 @@
+// Test
+@echo Hello Shell!
+
+@help
+
+sleep 5000
+
+testexit 1
