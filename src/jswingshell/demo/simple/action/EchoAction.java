@@ -82,15 +82,15 @@ public class EchoAction extends AbstractJssAction {
     }
 
     // #########################################################################
-    public EchoAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public EchoAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public EchoAction(String name, IJssController shellController, String[] args) {
+    public EchoAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public EchoAction(IJssController shellController, String[] args) {
+    public EchoAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -119,7 +119,7 @@ public class EchoAction extends AbstractJssAction {
     }
 
     @Override
-    public int run(IJssController shellController, String[] args) {
+    public int run(IJssController shellController, String... args) {
         int commandReturnStatus = AbstractJssAction.SUCCESS;
 
         if (shellController == null) {

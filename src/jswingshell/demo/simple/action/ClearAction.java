@@ -59,15 +59,15 @@ public class ClearAction extends AbstractJssAction {
     }
 
     // #########################################################################
-    public ClearAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public ClearAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public ClearAction(String name, IJssController shellController, String[] args) {
+    public ClearAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public ClearAction(IJssController shellController, String[] args) {
+    public ClearAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -96,7 +96,7 @@ public class ClearAction extends AbstractJssAction {
     }
 
     @Override
-    public int run(IJssController shellController, String[] args) {
+    public int run(IJssController shellController, String... args) {
         int commandReturnStatus = AbstractJssAction.SUCCESS;
 
         if (shellController == null) {

@@ -69,15 +69,15 @@ public class ExitAction extends AbstractJssAction {
     }
 
     // #########################################################################
-    public ExitAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public ExitAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public ExitAction(String name, IJssController shellController, String[] args) {
+    public ExitAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public ExitAction(IJssController shellController, String[] args) {
+    public ExitAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -106,7 +106,7 @@ public class ExitAction extends AbstractJssAction {
     }
 
     @Override
-    public int run(IJssController shellController, String[] args) {
+    public int run(IJssController shellController, String... args) {
         int commandReturnStatus = AbstractJssAction.SUCCESS;
 
         if (args == null || args.length <= 1) {

@@ -85,15 +85,15 @@ public class LoadCommandFile extends AbstractThreadedJssAction {
     }
 
     // #########################################################################
-    public LoadCommandFile(String name, Icon icon, IJssController shellController, String[] args) {
+    public LoadCommandFile(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public LoadCommandFile(String name, IJssController shellController, String[] args) {
+    public LoadCommandFile(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public LoadCommandFile(IJssController shellController, String[] args) {
+    public LoadCommandFile(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -122,7 +122,7 @@ public class LoadCommandFile extends AbstractThreadedJssAction {
     }
 
     @Override
-    protected AbstractJssActionWorker prepareWorker(IJssController shellController, String[] args) {
+    protected AbstractJssActionWorker prepareWorker(IJssController shellController, String... args) {
         LoadCommandFileWorker worker = null;
 
         if (shellController != null) {

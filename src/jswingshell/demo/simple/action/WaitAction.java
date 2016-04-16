@@ -73,15 +73,15 @@ public class WaitAction extends AbstractThreadedJssAction {
     }
 
     // #########################################################################
-    public WaitAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public WaitAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public WaitAction(String name, IJssController shellController, String[] args) {
+    public WaitAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public WaitAction(IJssController shellController, String[] args) {
+    public WaitAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -110,7 +110,7 @@ public class WaitAction extends AbstractThreadedJssAction {
     }
 
     @Override
-    protected AbstractJssActionWorker prepareWorker(IJssController shellController, String[] args) {
+    protected AbstractJssActionWorker prepareWorker(IJssController shellController, String... args) {
         SleepWorker worker = null;
 
         // Sleep default value

@@ -99,15 +99,15 @@ public class TimeAction extends AbstractJssAction {
     }
 
     // #########################################################################
-    public TimeAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public TimeAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public TimeAction(String name, IJssController shellController, String[] args) {
+    public TimeAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public TimeAction(IJssController shellController, String[] args) {
+    public TimeAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -136,7 +136,7 @@ public class TimeAction extends AbstractJssAction {
     }
 
     @Override
-    public int run(IJssController shellController, String[] args) {
+    public int run(IJssController shellController, String... args) {
         int commandReturnStatus = AbstractJssAction.SUCCESS;
 
         if (shellController == null) {

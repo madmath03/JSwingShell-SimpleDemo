@@ -69,15 +69,15 @@ public class SleepAction extends AbstractJssAction {
     }
 
     // #########################################################################
-    public SleepAction(String name, Icon icon, IJssController shellController, String[] args) {
+    public SleepAction(String name, Icon icon, IJssController shellController, String... args) {
         super(name, icon, shellController, args);
     }
 
-    public SleepAction(String name, IJssController shellController, String[] args) {
+    public SleepAction(String name, IJssController shellController, String... args) {
         super(name, shellController, args);
     }
 
-    public SleepAction(IJssController shellController, String[] args) {
+    public SleepAction(IJssController shellController, String... args) {
         super(shellController, args);
     }
 
@@ -106,7 +106,7 @@ public class SleepAction extends AbstractJssAction {
     }
 
     @Override
-    public int run(IJssController shellController, String[] args) {
+    public int run(IJssController shellController, String... args) {
         int commandReturnStatus = AbstractJssAction.SUCCESS;
 
         // Sleep default value
